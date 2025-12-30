@@ -1,0 +1,14 @@
+# Go
+bin/
+*.exe
+*.out
+
+# Environment
+.env
+
+# Kubernetes local files
+*.log
+
+# OS
+.DS_Store
+
