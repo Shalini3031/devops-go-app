@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres
+  name: go-app-service
 spec:
   selector:
-    app: postgres
+    app: go-app
   ports:
-    - port: 5432
-      targetPort: 5432
+    - port: 80
+      targetPort: 8080
   type: ClusterIP
 
