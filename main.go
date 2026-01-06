@@ -24,3 +24,4 @@ func main() {
 //trigger-test
 //trigger-2
 //automatic and manual trigger
+//dependency-trigger
