@@ -25,3 +25,4 @@ func main() {
 //trigger-2
 //automatic and manual trigger
 //dependency-trigger
+//webhook-trigger
