@@ -14,16 +14,11 @@ func main() {
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("ok"))
+		w.Write([]byte("ok v1.3"))
 	})
 
 	log.Println("Starting server on port", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
-//trigger-test
-//trigger-2
-//automatic and manual trigger
-//dependency-trigger
-//webhook-trigger
-//webhook-trigger-1
+//check img versioning

@@ -1,0 +1,17 @@
+pipelines:
+  go-app-deploy:
+    group: go-app
+    stages:
+      - deploy:
+          jobs:
+            deploy:
+              tasks:
+                - exec:
+                    command: docker
+                    arguments:
+                      [
+                        "run","-d","--name","go-app",
+                        "-p","8080:8080",
+                        "ima360shalini/go-app:latest"
+                      ]
+

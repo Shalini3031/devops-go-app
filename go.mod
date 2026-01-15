@@ -1,3 +1,3 @@
-module github.com/Shalini3031/go-app-v1
+module health-app
 
 go 1.22.2
